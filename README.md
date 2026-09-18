@@ -1,4 +1,4 @@
-[# Get Credit Rate Foundation: Explainable Credit Scorecard Framework
+# Get Credit Rate Foundation: Explainable Credit Scorecard Framework
 
 Open-source Weight of Evidence (WoE) logistic regression scorecard for lenders that must explain every decision: Community Development Financial Institutions (CDFIs) and other regulated lenders serving applicants with thin or no credit bureau file.
 
@@ -10,14 +10,14 @@ Released by [Get Credit Rate Foundation](https://getcreditrate.com), a Delaware 
 
 | Path | Contents |
 |---|---|
-| `src/extract_matured.py` | Builds the matured (resolved) loan set from the public LendingClub accepted-loan release (2007 to 2018 Q4, 2,260,701 rows) |
-| `src/fit_scorecard.py` | Fits WoE bins on training vintages (2012 to 2015) and estimates the full-file and thin-file model variants; out-of-time test on 2016 to 2017 vintages |
-| `src/build_appendices.py` | Builds the points-based scorecard (PDO 20, base 600 at 20:1 odds) and produces the bin tables, scorecard summary, population stability and adverse-action reason code appendices |
-| `src/ablation.py` | Feature ablation across Variants B, C, D and E against the platform's own risk grade |
-| `src/ablation_variant_f.py` | Addendum of 18 September 2026: reproduces Variant D and estimates Variant F with the debt to income ratio also removed |
-| `results/variantF_results.json` | Machine-readable results of the addendum run |
-| `docs/Model_Validation_Report_with_Addendum_2026-09-18.pdf` | Model Validation Report (Version 1.0, October 2025) with Addendum of 18 September 2026 |
-| `docs/Model_Card_and_Explainability_Architecture.pdf` | Model Card and Explainability Architecture (Version 1.0, October 2025) |
+| `extract_matured.py` | Builds the matured (resolved) loan set from the public LendingClub accepted-loan release (2007 to 2018 Q4, 2,260,701 rows) |
+| `fit_scorecard.py` | Fits WoE bins on training vintages (2012 to 2015) and estimates the full-file and thin-file model variants; out-of-time test on 2016 to 2017 vintages |
+| `build_appendices.py` | Builds the points-based scorecard (PDO 20, base 600 at 20:1 odds) and produces the bin tables, scorecard summary, population stability and adverse-action reason code appendices |
+| `ablation.py` | Feature ablation across Variants B, C, D and E against the platform's own risk grade |
+| `ablation_variant_f.py` | Addendum of 18 September 2026: reproduces Variant D and estimates Variant F with the debt to income ratio also removed |
+| `variantF_results.json` | Machine-readable results of the addendum run |
+| `Model_Validation_Report_with_Addendum_2026-09-18.pdf` | Model Validation Report (Version 1.0, October 2025) with Addendum of 18 September 2026 |
+| `Model_Card_and_Explainability_Architecture.pdf` | Model Card and Explainability Architecture (Version 1.0, October 2025) |
 
 ## Headline results (out-of-time, 462,426 test loans, 2016 to 2017 vintages)
 
@@ -31,11 +31,11 @@ Released by [Get Credit Rate Foundation](https://getcreditrate.com), a Delaware 
 | E | D with requested term also removed | 7 | 0.6377 | 0.2754 | 73.5% |
 | F | D with debt to income ratio also removed | 7 | 0.6437 | 0.2874 | 76.7% |
 
-Population: 1,249,246 resolved consumer loans in 2012 to 2017 origination vintages, 254,055 realized defaults. Estimation set 786,820 loans; test set 462,426 loans. Full method, calibration analysis and stated limitations are in `docs/Model_Validation_Report_with_Addendum_2026-09-18.pdf`.
+Population: 1,249,246 resolved consumer loans in 2012 to 2017 origination vintages, 254,055 realized defaults. Estimation set 786,820 loans; test set 462,426 loans. Full method, calibration analysis and stated limitations are in `Model_Validation_Report_with_Addendum_2026-09-18.pdf`.
 
 ## Why WoE logistic regression
 
-Every score decomposes into points per characteristic traceable to a published bin, so each declined application produces specific adverse action reasons drawn from the applicant's own data, as the Equal Credit Opportunity Act and Regulation B require. The audit record retained per decision holds the inputs, the bins, the points awarded, the model version and the timestamp. See `docs/Model_Card_and_Explainability_Architecture.pdf`.
+Every score decomposes into points per characteristic traceable to a published bin, so each declined application produces specific adverse action reasons drawn from the applicant's own data, as the Equal Credit Opportunity Act and Regulation B require. The audit record retained per decision holds the inputs, the bins, the points awarded, the model version and the timestamp. See `Model_Card_and_Explainability_Architecture.pdf`.
 
 ## Limitations, stated plainly
 
@@ -49,12 +49,12 @@ Every score decomposes into points per characteristic traceable to a published b
 
 ```
 pip install -r requirements.txt
-# place the public LendingClub accepted-loan release at data/accepted_2007_to_2018Q4.csv
-python src/extract_matured.py        # writes matured.parquet
-python src/fit_scorecard.py          # writes woe_spec.pkl and the validation report text
-python src/build_appendices.py       # writes scorecard_model.pkl and appendices
-python src/ablation.py               # Variants B to E
-python src/ablation_variant_f.py     # Variant D reproduction and Variant F
+# place the public LendingClub accepted-loan release at data/accepted_2007_to_2018Q4.csv (data/ is excluded from the repository)
+python extract_matured.py        # writes matured.parquet
+python fit_scorecard.py          # writes woe_spec.pkl and the validation report text
+python build_appendices.py       # writes scorecard_model.pkl and appendices
+python ablation.py               # Variants B to E
+python ablation_variant_f.py     # Variant D reproduction and Variant F
 ```
 
 The validation data is not redistributed in this repository. It is a public release available from its original source and from Kaggle.
@@ -67,4 +67,3 @@ Model development, documentation, validation and monitoring follow the Foundatio
 
 Apache License 2.0. See `LICENSE` and `NOTICE`.
 
-](https://github.com/getcreditrate/scorecard/edit/main/README.md)
