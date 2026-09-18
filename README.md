@@ -1,4 +1,4 @@
-# Get Credit Rate Foundation: Explainable Credit Scorecard Framework
+[# Get Credit Rate Foundation: Explainable Credit Scorecard Framework
 
 Open-source Weight of Evidence (WoE) logistic regression scorecard for lenders that must explain every decision: Community Development Financial Institutions (CDFIs) and other regulated lenders serving applicants with thin or no credit bureau file.
 
@@ -67,3 +67,4 @@ Model development, documentation, validation and monitoring follow the Foundatio
 
 Apache License 2.0. See `LICENSE` and `NOTICE`.
 
+](https://github.com/getcreditrate/scorecard/edit/main/README.md)
