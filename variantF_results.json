@@ -1,0 +1,21 @@
+{
+ "train_n": 786820,
+ "test_n": 462426,
+ "loans_total": 1249246,
+ "defaults": 254055,
+ "bench_auc": 0.6874,
+ "bench_gini": 0.3749,
+ "D": {
+  "k": 8,
+  "auc": 0.6535,
+  "gini": 0.307,
+  "pct_bench_gini": 81.9
+ },
+ "F": {
+  "k": 7,
+  "auc": 0.6437,
+  "gini": 0.2874,
+  "pct_bench_gini": 76.7
+ },
+ "dti_IV": 0.0735
+}
