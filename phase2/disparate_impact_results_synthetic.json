@@ -1,0 +1,42 @@
+{
+ "run": "Phase 2 disparate impact test under Retrospective Validation Protocol v1.0",
+ "input": "SYNTHETIC_scored_holdout.parquet",
+ "n": 518744,
+ "cutoff": 0.2,
+ "higher_is_riskier": true,
+ "overall_approval_rate": 0.7,
+ "classes": {
+  "SYNTHETIC_group": {
+   "reference_group": "SYNTH_A",
+   "groups": {
+    "SYNTH_A": {
+     "n": 311469,
+     "approval_rate": 0.7002,
+     "adverse_impact_ratio_vs_reference": 1.0,
+     "four_fifths_screen": "reference",
+     "standardized_mean_score_difference": 0.0,
+     "observed_default_rate_among_approved": 0.1731,
+     "conclusion_permitted": true
+    },
+    "SYNTH_B": {
+     "n": 155488,
+     "approval_rate": 0.7,
+     "adverse_impact_ratio_vs_reference": 0.9997,
+     "four_fifths_screen": "PASS",
+     "standardized_mean_score_difference": -0.0018,
+     "observed_default_rate_among_approved": 0.1748,
+     "conclusion_permitted": true
+    },
+    "SYNTH_C": {
+     "n": 51787,
+     "approval_rate": 0.6987,
+     "adverse_impact_ratio_vs_reference": 0.9978,
+     "four_fifths_screen": "PASS",
+     "standardized_mean_score_difference": 0.0046,
+     "observed_default_rate_among_approved": 0.1745,
+     "conclusion_permitted": true
+    }
+   }
+  }
+ }
+}

@@ -1,0 +1,125 @@
+{
+ "run": "Phase 2 retrospective refit under Retrospective Validation Protocol v1.0",
+ "input": "..\\matured.parquet",
+ "loans_total": 1345350,
+ "estimation_n": 826606,
+ "holdout_n": 518744,
+ "estimation_vintages": [
+  2007,
+  2008,
+  2009,
+  2010,
+  2011,
+  2012,
+  2013,
+  2014,
+  2015
+ ],
+ "holdout_vintages": [
+  2016,
+  2017,
+  2018
+ ],
+ "estimation_default_rate": 0.1843,
+ "holdout_default_rate": 0.2242,
+ "characteristics_used": [
+  "annual_inc",
+  "dti",
+  "emp_length",
+  "home_ownership",
+  "loan_amnt",
+  "purpose",
+  "term",
+  "verification_status"
+ ],
+ "holdout_auc": 0.6526,
+ "holdout_gini": 0.3052,
+ "holdout_ks": 0.2191,
+ "ks_x100": 21.9,
+ "protocol_ks_floor_x100": 20,
+ "passes_ks_floor": true,
+ "psi_estimation_vs_holdout_scores": 0.0089,
+ "calibration_by_decile": [
+  {
+   "dec": 0,
+   "n": 51876,
+   "predicted": 0.0725,
+   "observed": 0.0946
+  },
+  {
+   "dec": 1,
+   "n": 51874,
+   "predicted": 0.0941,
+   "observed": 0.1272
+  },
+  {
+   "dec": 2,
+   "n": 51891,
+   "predicted": 0.1105,
+   "observed": 0.1525
+  },
+  {
+   "dec": 3,
+   "n": 51857,
+   "predicted": 0.1264,
+   "observed": 0.1722
+  },
+  {
+   "dec": 4,
+   "n": 51875,
+   "predicted": 0.1434,
+   "observed": 0.1982
+  },
+  {
+   "dec": 5,
+   "n": 51873,
+   "predicted": 0.1624,
+   "observed": 0.2235
+  },
+  {
+   "dec": 6,
+   "n": 51880,
+   "predicted": 0.1858,
+   "observed": 0.248
+  },
+  {
+   "dec": 7,
+   "n": 51904,
+   "predicted": 0.2184,
+   "observed": 0.2787
+  },
+  {
+   "dec": 8,
+   "n": 51842,
+   "predicted": 0.2727,
+   "observed": 0.3222
+  },
+  {
+   "dec": 9,
+   "n": 51872,
+   "predicted": 0.3848,
+   "observed": 0.4247
+  }
+ ],
+ "intercept": -1.4889,
+ "coefficients": {
+  "annual_inc": -1.0371,
+  "dti": -0.6861,
+  "emp_length": -0.9111,
+  "home_ownership": -1.1646,
+  "loan_amnt": -0.2455,
+  "purpose": -0.743,
+  "term": -0.9828,
+  "verification_status": -0.4896
+ },
+ "information_value": {
+  "annual_inc": 0.0309,
+  "dti": 0.0736,
+  "emp_length": 0.0068,
+  "home_ownership": 0.0209,
+  "loan_amnt": 0.0361,
+  "purpose": 0.0208,
+  "term": 0.2403,
+  "verification_status": 0.0513
+ }
+}
