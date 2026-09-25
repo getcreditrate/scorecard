@@ -1,0 +1,30 @@
+cff-version: 1.2.0
+message: "If you use this framework, please cite it as below."
+type: software
+title: "Explainable Credit Scorecard Framework: Weight of Evidence logistic regression scorecard for lenders serving applicants with thin or no credit bureau file"
+authors:
+  - family-names: Asare
+    given-names: Prince Akonor
+    affiliation: Get Credit Rate Foundation
+version: "1.0"
+date-released: 2026-09-18
+license: Apache-2.0
+repository-code: https://github.com/getcreditrate/scorecard
+url: https://getcreditrate.com
+abstract: >
+  Open-source Weight of Evidence logistic regression scorecard for Community Development
+  Financial Institutions and other regulated lenders, validated on 1,249,246 resolved
+  consumer loans with an out-of-time test on 462,426 loans. With every credit report field
+  removed, eight application-level characteristics retain 81.9 percent of the benchmark
+  Gini. Includes a pre-registered retrospective validation protocol, fair-lending test
+  implementation and model risk governance documentation. Released under the Apache
+  License 2.0 by Get Credit Rate Foundation, a Delaware nonprofit corporation.
+keywords:
+  - credit scoring
+  - weight of evidence
+  - logistic regression
+  - fair lending
+  - explainable machine learning
+  - community development financial institutions
+  - alternative data
+  - model risk management
