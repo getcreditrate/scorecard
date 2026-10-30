@@ -2,6 +2,11 @@
 
 All notable changes to the framework and its documentation. Dates before 18 September 2026 are taken from the revision history of the Four Phase Implementation Plan and the version pages of the documents named; the repository itself begins on 18 September 2026.
 
+## 2026-10-29
+
+- Phase 2 package Part 3 is the Data Handling Standard, version 1.1 (`phase2/DATA_HANDLING_STANDARD.md`): the Foundation's commitments on receipt, use, security, retention and destruction of institution records. It binds the Foundation on receipt of any record and requires no instrument from the institution. Parts 1, 2 and 4 to 6 unchanged.
+- README status updated: Phase 3 underway since October 2026 with a Treasury-certified CDFI, subject to that institution's internal review. Four Phase Implementation Plan revision 5.2.
+
 ## 2026-09-25
 
 - Published the Phase 2 package to `phase2/`: Retrospective Validation Protocol v1.0, Partner Data Specification, Independent Validator Scope of Work, Code Readiness Record, `refit.py`, `disparate_impact.py`, and the results of the end-to-end run on the public population (holdout KS 21.9, PSI 0.009). The package was issued and presented to the board second line review function on 20 September 2026.

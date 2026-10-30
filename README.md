@@ -8,7 +8,7 @@ Released by [Get Credit Rate Foundation](https://getcreditrate.com), a Delaware 
 
 | | |
 |---|---|
-| **Status** | Phase 1 (method) and Phase 2 (onboarding standard) complete. Phase 3 (per-institution calibration and champion-challenger pilot) scheduled to begin October 2026 with a Treasury-certified CDFI, subject to that institution's internal review and an executed data sharing agreement. |
+| **Status** | Phase 1 (method) and Phase 2 (onboarding standard) complete. Phase 3 (per-institution calibration and champion-challenger pilot) underway since October 2026 with a Treasury-certified CDFI, subject to that institution's internal review. |
 | **Validation** | 1,249,246 resolved consumer loans, 254,055 realized defaults, out-of-time test on 462,426 loans |
 | **Headline** | 81.9% of benchmark ranking power with every credit report field removed (8 application-level characteristics); 76.7% with debt-to-income also removed |
 | **License** | Apache 2.0. Free to use, modify and redistribute. No fee, no permission, no vendor. |
@@ -52,8 +52,9 @@ Issued 20 September 2026 and frozen before any institution's record was received
 | `phase2/refit_results_public.json` | End-to-end run on the public population: holdout KS 21.9 against the floor of 20; PSI 0.009 |
 | `phase2/disparate_impact_results_synthetic.json` | Execution proof on a synthetic group column; no inference about any real population |
 | `phase2/CODE_READINESS.md` | Code Readiness Record |
+| `phase2/DATA_HANDLING_STANDARD.md` | Data Handling Standard v1.1 (Part 3): receipt, use, security, retention and destruction of institution records |
 
-The Data Sharing Agreement template and the Specialty Consumer Reporting Agency Memorandum are held for counsel review and are available from the Foundation on request.
+The Specialty Consumer Reporting Agency Memorandum is held for counsel review and is available from the Foundation on request. The Data Handling Standard binds the Foundation on receipt of any institution record; no instrument is required of the institution.
 
 ## Headline results (out-of-time, 462,426 test loans, 2016 to 2017 vintages)
 
