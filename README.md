@@ -8,7 +8,7 @@ Released by [Get Credit Rate Foundation](https://getcreditrate.com), a Delaware 
 
 | | |
 |---|---|
-| **Status** | Phase 1 (method) and Phase 2 (onboarding standard) complete. Phase 3 (per-institution calibration and champion-challenger pilot) underway since October 2026 with a Treasury-certified CDFI, subject to that institution's internal review. |
+| **Status** | Phase 1 (method) and Phase 2 (onboarding standard) complete. Phase 3 (per-institution calibration and champion-challenger pilot) underway since October 2026 with a Treasury-certified CDFI; the institution's internal review is in progress. |
 | **Validation** | 1,249,246 resolved consumer loans, 254,055 realized defaults, out-of-time test on 462,426 loans |
 | **Headline** | 81.9% of benchmark ranking power with every credit report field removed (8 application-level characteristics); 76.7% with debt-to-income also removed |
 | **License** | Apache 2.0. Free to use, modify and redistribute. No fee, no permission, no vendor. |
@@ -99,7 +99,7 @@ The Foundation provides implementation support, fair-lending validation and trai
 |---|---|---|
 | 1 | The method: model, validation, explainability architecture, compliance register, governance, open release | Complete, September 2026 |
 | 2 | The onboarding standard: pre-registered protocol, data specification, validator scope, implementing code | Complete, 20 September 2026 |
-| 3 | Per-institution calibration and champion-challenger pilot at three to five CDFIs | Scheduled to begin October 2026 |
+| 3 | Per-institution calibration and champion-challenger pilot at three to five CDFIs | Underway since October 2026 |
 | 4 | National scaling through CDFI intermediaries; playbooks and compliance modules published under Apache 2.0 | Scheduled on completion of Phase 3 |
 
 ## Reproducing the Phase 1 results

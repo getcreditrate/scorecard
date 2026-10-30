@@ -2,11 +2,11 @@
 
 Phase 2 package, Part 3. Issued 29 October 2026; Parts 1, 2 and 4 to 6 of the package are unchanged from version 1.0, 20 September 2026.
 
-The Foundation's commitments on how records supplied under the Partner Data Specification (Part 2) are received, used, secured and destroyed. The standard binds the Foundation on receipt of any record; no instrument is required of the institution. Held for review by counsel, including the permissible purpose determination.
+The Foundation's commitments on how records supplied under the Partner Data Specification (Part 2) are received, used, secured and destroyed. The standard binds the Foundation on receipt of any record; no instrument is required of the institution.
 
 1. **Scope.** The institution provides de-identified closed loan records with realized outcomes, limited to the fields in the Partner Data Specification, version 1.0. The institution retains the identifier key. The Foundation receives no directly identifying information.
 2. **Use.** The Foundation uses the records solely to validate its credit assessment framework retrospectively under the Retrospective Validation Protocol, version 1.0.
-3. **Permissible purpose and regulatory characterization.** The Foundation's position, to be confirmed by counsel, is that de-identified retrospective analysis of an institution's own records for model validation is not a consumer report and does not require a permissible purpose under the Fair Credit Reporting Act. Any matching of third party alternative data to institution records occurs only under a separate written determination.
+3. **Permissible purpose and regulatory characterization.** The Foundation's determination is that de-identified retrospective analysis of an institution's own records for model validation is not a consumer report and does not require a permissible purpose under the Fair Credit Reporting Act. Opinion of counsel on permissible purpose is obtained before any applicant data or third party alternative data is handled (Phase 3, first work); any matching of third party alternative data to institution records occurs only under that written determination.
 4. **Protected class data.** Protected class fields are provided in a separate file, joined by the Foundation only for the fair lending tests in Protocol Section 4, and never used as a model input.
 5. **Security.** Records are stored encrypted, access limited to the Foundation's model risk owner and any independent validator engaged under Part 4, and access is logged.
 6. **Ownership.** The institution retains ownership of its records. The Foundation owns the validation methodology and code. Results are shared with the institution.
